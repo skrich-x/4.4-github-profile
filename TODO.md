@@ -5,6 +5,7 @@
    [ ] List of repositories (single list template with #each, or a li template)
  [ ] Static HTML
    [ ] Top content
+ [ ] Dynamic
    [ ] User container
    [ ] List container
  [ ] Style the HTML
