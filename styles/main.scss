@@ -25,6 +25,17 @@ body {
 }
  */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a { color: inherit; }
+
  .centerContainer{
    @include outer-container (980px)
  }
@@ -45,6 +56,39 @@ body {
   border-radius:3px;
 }
 
-.repoLists li{
-  @include span-columns (9);
+.repos ul{
+  @include span-columns (9 of 12);
+}
+
+.user h1{
+  font-size:26px;
+}
+
+.user h2{
+  color:RGBA(102, 102, 115, 1);
+  font-size: 20px;
+  font-weight:300;
+}
+
+.octicon-location,
+.octicon-clock{
+  color:RGBA(204, 204, 204, 1);
+}
+
+.follows h3{
+  color:RGBA(61, 132, 191, 1);
+  font-size:28px;
+}
+
+.follows span{
+  color:RGBA(153, 153, 153, 1);
+  font-size:11px;
+}
+
+.repoList ul{
+  list-style-type: none;
+}
+
+.repositoryNames{
+  color:RGBA(61, 132, 191, 1);
 }

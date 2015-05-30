@@ -1,11 +1,14 @@
 {{#each this}}
   <li>
+    <div class = "repositoryNames"
     <a href="{{html_url}}"><h2 class = "repoNames">{{name}}</h2></a>
+    </div>
     <p>{{pushed_at}}</p>
     <div class = "stats">
       <p>{{launguage}}</p>
       <a href="{{stargazers_url}}"><span class = "octicon octicon-star"></span>{{stargazers_count}}</a>
       <a href="{{forks_url}}"><span class = "octicon octicon-repo-forked"></span>{{forks_count}}</a>
     </div>
+    <hr>
   </li>
 {{/each}}
