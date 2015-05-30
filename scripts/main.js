@@ -12,9 +12,7 @@
       $('.user').prepend(JST['user'](user));
       console.log(user);
   });
-});
 
-  $(document).ready(function(){
     $.ajax({
     url: "https://api.github.com/users/skrich-x/repos",
      headers: {
@@ -26,6 +24,7 @@
     console.log(repos);
   });
 });
+
   // $(document).ready(function(){
   //  var code = window.location.href.match(/\?code=(.*)/)[1];
   //   if(code) {

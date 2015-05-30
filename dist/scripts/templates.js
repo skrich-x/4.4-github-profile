@@ -5,12 +5,12 @@ this["JST"]["application"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1
 this["JST"]["repos"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
     var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
-  return "  <li>\n    <div class = \"repositoryNames\"\n    <a href=\""
+  return "  <li>\n\n    <div class = \"repositoryNames\"\n    <a href=\""
     + alias3(((helper = (helper = helpers.html_url || (depth0 != null ? depth0.html_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"html_url","hash":{},"data":data}) : helper)))
     + "\"><h2 class = \"repoNames\">"
     + alias3(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
     + "</h2></a>\n    </div>\n    <p>"
-    + alias3(((helper = (helper = helpers.pushed_at || (depth0 != null ? depth0.pushed_at : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"pushed_at","hash":{},"data":data}) : helper)))
+    + alias3(((helper = (helper = helpers.updated_at || (depth0 != null ? depth0.updated_at : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"updated_at","hash":{},"data":data}) : helper)))
     + "</p>\n    <div class = \"stats\">\n      <p>"
     + alias3(((helper = (helper = helpers.launguage || (depth0 != null ? depth0.launguage : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"launguage","hash":{},"data":data}) : helper)))
     + "</p>\n      <a href=\""
@@ -21,7 +21,7 @@ this["JST"]["repos"] = Handlebars.template({"1":function(depth0,helpers,partials
     + alias3(((helper = (helper = helpers.forks_url || (depth0 != null ? depth0.forks_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"forks_url","hash":{},"data":data}) : helper)))
     + "\"><span class = \"octicon octicon-repo-forked\"></span>"
     + alias3(((helper = (helper = helpers.forks_count || (depth0 != null ? depth0.forks_count : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"forks_count","hash":{},"data":data}) : helper)))
-    + "</a>\n    </div>\n    <hr>\n  </li>\n";
+    + "</a>\n    </div>\n\n  </li>\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var stack1;
 

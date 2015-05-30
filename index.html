@@ -16,29 +16,41 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <container class = "centerContainer">
+
 
       <header>
-        <nav>
-          <ul>
-            <li><span class="octicon octicon-mark-github"></span>
-            </li>
-            <li><input type="text"placeholder="Search Github">
-          </ul>
-      </nav>
-      </header>
+        <nav class = "centeredNav">
+            <span class = "mega-octicon octicon-mark-github"></span>
 
+            <input type = "text" placeholder="Search Github">
+            <a href = "#">Explore</a>
+            <a href = "#">Gist</a>
+            <a href = "#">Blog</a>
+            <a href = "#">Help</a>
+            <div class = 'rightNav'>
+              <a href = "#"><img src = "https://avatars.githubusercontent.com/u/10929305?v=3" alt = "Avatar" />skrich-x</a>
+
+                <span class="octicon octicon-plus"></span>
+                <span class="octicon octicon-triangle-down"></span>
+              <span class = "octicon octicon-inbox"></span>
+              <span class = "octicon octicon-gear"></span>
+              <span class = "octicon octicon-sign-out"></span>
+            </div>
+        </nav>
+      </header>
+    <section class = "centerContainer">
       <container class = "userInfo">
         <div class = "user">
         </div>
       </container>
 
-      <container class = "repoLists">
+      <container class = 'repoContain'>
         <ul class = "repos">
+
         </ul>
       </container>
 
-    </container>
+    </section>
     <!-- <button>LogIn</button>-->
   <!-- Third Party Scripts -->
   <script src="bower_components/jquery/dist/jquery.js"></script>

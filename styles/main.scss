@@ -20,10 +20,7 @@ body {
   color: $base-font-color;
 }
 
-/* ul{
-  list-style: none;
-}
- */
+//Global DOM styling
 
 * {
   box-sizing: border-box;
@@ -36,59 +33,107 @@ ul{
 
 a { color: inherit; }
 
+//Header styling
+
+header{
+  height: 50px;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid RGBA(229, 229, 229, 1);
+  background-color:RGBA(245, 245, 245, 1);
+}
+
+.centeredNav{
+  @include outer-container (980px);
+
+}
+
+
+input{
+  height: 28px;
+  width: 360px;
+}
+
+input .type{
+  height: 22px;
+  width:250px;
+}
+
+.octicon-mark-github{
+  height: 28px;
+  width: 28px;
+}
+
+nav a{
+  text-decoration:none;
+  padding: 4px 8px;
+  font-size: 13px;
+}
+
+.rightNav{
+  float:right;
+}
+
+nav img{
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+}
+
+//centerContainer
+
  .centerContainer{
-   @include outer-container (980px)
+   @include outer-container (980px);
+   margin-top: 20px;
  }
 
-.user section{
+//User sidebar Styling and Position
+.userInfo{
   @include span-columns (3);
 }
 
 .avatar img{
-  height:230px;
-  width:230px;
-  border-radius:6px;
+  height: 230px;
+  width: 230px;
+  border-radius: 6px;
 }
 
 .organization img{
-  height:42px;
-  width:42px;
-  border-radius:3px;
-}
-
-.repos ul{
-  @include span-columns (9 of 12);
+  height: 42px;
+  width: 42px;
+  border-radius: 3px;
 }
 
 .user h1{
-  font-size:26px;
+  font-size: 26px;
 }
 
 .user h2{
-  color:RGBA(102, 102, 115, 1);
+  color: RGBA(102, 102, 115, 1);
   font-size: 20px;
-  font-weight:300;
+  font-weight: 300;
 }
 
 .octicon-location,
 .octicon-clock{
-  color:RGBA(204, 204, 204, 1);
+  color: RGBA(204, 204, 204, 1);
 }
 
 .follows h3{
-  color:RGBA(61, 132, 191, 1);
-  font-size:28px;
+  color: RGBA(61, 132, 191, 1);
+  font-size: 28px;
 }
 
 .follows span{
-  color:RGBA(153, 153, 153, 1);
-  font-size:11px;
+  color: RGBA(153, 153, 153, 1);
+  font-size: 11px;
 }
 
-.repoList ul{
-  list-style-type: none;
+//Repos Styling and Position
+.repoContain{
+  @include span-columns (9 of 12);
 }
 
 .repositoryNames{
-  color:RGBA(61, 132, 191, 1);
+  color: RGBA(61, 132, 191, 1);
 }
