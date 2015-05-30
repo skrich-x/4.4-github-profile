@@ -22,7 +22,7 @@
 
 }
   }).then(function(repos) {
-    $('body').prepend(JST['application'](repos));
+    $('body').prepend(JST['repos'](repos));
     console.log(repos);
   });
 });
