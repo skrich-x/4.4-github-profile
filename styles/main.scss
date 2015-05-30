@@ -19,3 +19,32 @@ body {
   background-color: $base-background-color;
   color: $base-font-color;
 }
+
+/* ul{
+  list-style: none;
+}
+ */
+
+ .centerContainer{
+   @include outer-container (980px)
+ }
+
+.user section{
+  @include span-columns (3);
+}
+
+.avatar img{
+  height:230px;
+  width:230px;
+  border-radius:6px;
+}
+
+.organization img{
+  height:42px;
+  width:42px;
+  border-radius:3px;
+}
+
+.repoLists li{
+  @include span-columns (9);
+}
