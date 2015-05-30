@@ -37,6 +37,13 @@ ul{
 
 a { color: inherit; }
 
+hr{
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid RGBA(229, 229, 229, 1);
+}
+
 //Header styling
 
 header{
@@ -45,6 +52,8 @@ header{
   margin: 0 auto;
   border-bottom: 1px solid RGBA(229, 229, 229, 1);
   background-color:RGBA(245, 245, 245, 1);
+  padding-top:10px;
+  padding-bottom:10px;
 }
 
 .centeredNav{
@@ -52,6 +61,10 @@ header{
 
 }
 
+
+.centeredNav{
+  text-align: middle;
+}
 
 input{
   height: 28px;
@@ -63,9 +76,10 @@ input .type{
   width:250px;
 }
 
-.octicon-mark-github{
+.octicon-mark-github span{
   height: 28px;
   width: 28px;
+  margin-right: 10px;
 }
 
 nav a{
@@ -74,8 +88,9 @@ nav a{
   font-size: 13px;
 }
 
+
 .rightNav{
-  float:right;
+  float: right;
 }
 
 nav img{
@@ -83,7 +98,9 @@ nav img{
   width: 20px;
   border-radius: 3px;
 }
-
+.picNamePlus{
+  vertical-align:middle;
+}
 //centerContainer
 
  .centerContainer{
@@ -92,6 +109,7 @@ nav img{
  }
 
 //User sidebar Styling and Position
+
 .userInfo{
   @include span-columns (3);
   height:100%;
@@ -137,10 +155,40 @@ nav img{
 //Tabbed Nav and Filter
 .tabbedNav{
   padding: 10px;
-  border-bottom: 1px solid RGBA(213, 213, 213, 1);
 }
 
+.tabs{
+  margin-bottom: 15px;
+  font-size: 14px;
+}
 
+.tabs a{
+  padding: 8px 12px;
+}
+
+.editProfile{
+  white-space: nowrap;
+  vertical-align: middle;
+  height: 26px;
+  width: 108px;
+  float: right;
+}
+
+.editProfile span{
+  font-size: 13px;
+}
+
+.search,
+.newRepoButton span{
+  font-size: 13px;
+}
+
+.filterBar{
+  border-top: 1px solid RGBA(229, 229, 229, 1);
+  padding-top: 10px;
+
+
+}
  .filterBar input{
   height: 34px;
   width: 260px;
@@ -161,12 +209,13 @@ nav img{
    color:white;
    border: 1px solid RGBA(83, 169, 80, 1);
    margin-left: 15px;
+   float:right;
 }
 
 //Repos Styling and Position
 .repoContain{
   @include span-columns (9 of 12);
-
+  padding-left: 10px;
 }
 
 .repositoryNames{
@@ -175,4 +224,12 @@ nav img{
 
 .repos li{
   height: 111px;
+  border-top: 1px solid RGBA(229, 229, 229, 1);
+  vertical-align: middle;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.stats{
+  float:right;
 }
