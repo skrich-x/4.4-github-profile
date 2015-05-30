@@ -20,7 +20,7 @@
 
 }
   }).then(function(repos) {
-    $('body').append(JST['repos'](repos));
+    $('.repos').append(JST['repos'](repos));
     console.log(repos);
   });
 });
