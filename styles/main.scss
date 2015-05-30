@@ -1,4 +1,6 @@
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+
+
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
 // Typography
@@ -22,6 +24,7 @@ body {
 
 //Global DOM styling
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,6 +32,7 @@ body {
 
 ul{
   list-style-type: none;
+  padding: 0;
 }
 
 a { color: inherit; }
@@ -90,6 +94,8 @@ nav img{
 //User sidebar Styling and Position
 .userInfo{
   @include span-columns (3);
+  height:100%;
+  padding: 10px;
 }
 
 .avatar img{
@@ -128,10 +134,39 @@ nav img{
   color: RGBA(153, 153, 153, 1);
   font-size: 11px;
 }
+//Tabbed Nav and Filter
+.tabbedNav{
+  padding: 10px;
+  border-bottom: 1px solid RGBA(213, 213, 213, 1);
+}
+
+
+ .filterBar input{
+  height: 34px;
+  width: 260px;
+}
+
+.filterBar a{
+  font-size: 13px;
+}
+
+.filterBar button{
+  height: 34px;
+  width: 69px;
+  text-decoration:none;
+}
+
+ .newRepoButton{
+   background-color: RGBA(134, 217, 105, 1);
+   color:white;
+   border: 1px solid RGBA(83, 169, 80, 1);
+   margin-left: 15px;
+}
 
 //Repos Styling and Position
 .repoContain{
   @include span-columns (9 of 12);
+
 }
 
 .repositoryNames{

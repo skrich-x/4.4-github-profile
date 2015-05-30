@@ -1,6 +1,6 @@
 this["JST"] = this["JST"] || {};
 this["JST"]["application"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    return "";
+    return "\n";
 },"useData":true});
 this["JST"]["repos"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
     var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
@@ -52,5 +52,5 @@ this["JST"]["user"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"mai
     + alias3(((helper = (helper = helpers.following_url || (depth0 != null ? depth0.following_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"following_url","hash":{},"data":data}) : helper)))
     + "\"><h3>"
     + alias3(((helper = (helper = helpers.following || (depth0 != null ? depth0.following : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"following","hash":{},"data":data}) : helper)))
-    + "</h3></a>\n    <span>Following</span>\n  </div>\n\n  <hr>\n  \n  <div class = \"organization\">\n    <h4>Organizations</h4>\n\n    <a href=\"/TIY-GVL-FEE-2015-May\" aria-label=\"TIY-GVL-FEE-2015-May\"><img alt=\"@TIY-GVL-FEE-2015-May\" src=\"https://avatars0.githubusercontent.com/u/11824325?v=3&amp;s=84\"></a>\n\n\n    <a href=\"/TechClimber\" aria-label=\"TechClimber\"><img alt=\"@TechClimber\" data-user=\"12204206\" src=\"https://avatars0.githubusercontent.com/u/12204206?v=3&amp;s=84\"></a>\n  </div>\n\n</section>\n";
+    + "</h3></a>\n    <span>Following</span>\n  </div>\n\n  <hr>\n\n  <div class = \"organization\">\n    <h4>Organizations</h4>\n\n    <a href=\"/TIY-GVL-FEE-2015-May\" aria-label=\"TIY-GVL-FEE-2015-May\"><img alt=\"@TIY-GVL-FEE-2015-May\" src=\"https://avatars0.githubusercontent.com/u/11824325?v=3&amp;s=84\"></a>\n\n\n    <a href=\"/TechClimber\" aria-label=\"TechClimber\"><img alt=\"@TechClimber\" data-user=\"12204206\" src=\"https://avatars0.githubusercontent.com/u/12204206?v=3&amp;s=84\"></a>\n  </div>\n\n</section>\n";
 },"useData":true});
