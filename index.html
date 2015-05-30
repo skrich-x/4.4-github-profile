@@ -7,6 +7,8 @@
 
     <title></title>
 
+    <link rel="stylesheet" href="/octicons/octicons.css">
+
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
 
     <link rel="stylesheet" href="dist/styles/main.css">
@@ -14,15 +16,20 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
+    <container class = "centerContainer">
       <header>
-        <ul>
-        
+        <nav>
+          <ul>
+            <li><span class="octicon octicon-mark-github"></span>
+            </li>
+            <li><input type="text"placeholder="Search Github">
+          </ul>
+      </nav>
       </header>
-      <section class = "userInfo">
-      </section>
-
+      <div class = "user">
+      </div>
+    </container>
     <button>LogIn</button>
-
   <!-- Third Party Scripts -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/underscore/underscore.js"></script>
