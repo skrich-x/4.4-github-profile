@@ -11,9 +11,9 @@ this["JST"]["repos"] = Handlebars.template({"1":function(depth0,helpers,partials
     + alias3(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
     + "</h2></a>\n    </div>\n    <p>"
     + alias3(((helper = (helper = helpers.updated_at || (depth0 != null ? depth0.updated_at : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"updated_at","hash":{},"data":data}) : helper)))
-    + "</p>\n   </div>\n    <div class = \"stats\">\n      <p>"
+    + "</p>\n   </div>\n    <div class = \"stats\">\n      <span>"
     + alias3(((helper = (helper = helpers.language || (depth0 != null ? depth0.language : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"language","hash":{},"data":data}) : helper)))
-    + "</p>\n      <a href=\""
+    + "</span>\n      <a href=\""
     + alias3(((helper = (helper = helpers.stargazers_url || (depth0 != null ? depth0.stargazers_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"stargazers_url","hash":{},"data":data}) : helper)))
     + "\"><span class = \"octicon octicon-star\"></span>"
     + alias3(((helper = (helper = helpers.stargazers_count || (depth0 != null ? depth0.stargazers_count : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"stargazers_count","hash":{},"data":data}) : helper)))

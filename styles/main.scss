@@ -24,7 +24,6 @@ body {
 
 //Global DOM styling
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -225,11 +224,17 @@ nav img{
 .repos li{
   height: 111px;
   border-top: 1px solid RGBA(229, 229, 229, 1);
-  vertical-align: middle;
+  vertical-align: top;
   padding-top:30px;
   padding-bottom:30px;
 }
 
+.nameUpdate{
+  float:left;
+  color:RGBA(136, 136, 136, 1);
+}
 .stats{
-  float:right;
+  float: right;
+  color: RGBA(136, 136, 136, 1);
+
 }
