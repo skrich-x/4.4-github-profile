@@ -214,9 +214,8 @@ nav img{
 .filterBar{
   border-top: 1px solid RGBA(229, 229, 229, 1);
   padding-top: 10px;
-
-
 }
+
  .filterBar input{
   height: 34px;
   width: 260px;
@@ -224,6 +223,14 @@ nav img{
 
 .filterBar a{
   font-size: 13px;
+  color:RGBA(61, 132, 191, 1);
+  margin-left:10px;
+  font-weight: 400;
+  text-decoration:none;
+}
+
+.filterBar a:hover{
+  text-decoration:underline;
 }
 
 .filterBar button{
