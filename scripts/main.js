@@ -20,11 +20,13 @@
 
 }
   }).then(function(repos) {
-    $('.repos').append(JST['repos'](repos));
+    $('.repos').append(JST['repos'](repos.reverse()));
     console.log(repos);
   });
 });
 
+
+// $('.content').append(JST['repo-item'](data.sort(sortRepos).reverse()));
   // $(document).ready(function(){
   //  var code = window.location.href.match(/\?code=(.*)/)[1];
   //   if(code) {

@@ -57,9 +57,7 @@ header{
 
 .centeredNav{
   @include outer-container (980px);
-
 }
-
 
 .centeredNav{
   text-align: middle;
@@ -75,7 +73,7 @@ input .type{
   width:250px;
 }
 
-.octicon-mark-github span{
+.mega-octicon-mark-github span{
   height: 28px;
   width: 28px;
   margin-right: 10px;
@@ -85,8 +83,16 @@ nav a{
   text-decoration:none;
   padding: 4px 8px;
   font-size: 13px;
+  font-weight: 600;
 }
 
+nav a:hover{
+  color:RGBA(61, 132, 191, 1);
+}
+
+nav span:hover{
+  color:RGBA(61, 132, 191, 1);
+}
 
 .rightNav{
   float: right;
@@ -129,12 +135,21 @@ nav img{
 
 .user h1{
   font-size: 26px;
+  margin-top:5px;
+  margin-bottom:1px;
 }
 
 .user h2{
   color: RGBA(102, 102, 115, 1);
   font-size: 20px;
   font-weight: 300;
+  margin-bottom: 15px;
+}
+.locationJoined{
+  height: 75px;
+  font-size: 13px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .octicon-location,
@@ -142,14 +157,28 @@ nav img{
   color: RGBA(204, 204, 204, 1);
 }
 
+.follows{
+  height: 73px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .follows h3{
   color: RGBA(61, 132, 191, 1);
   font-size: 28px;
+  display: inline-block;
 }
 
-.follows span{
+.follows p{
   color: RGBA(153, 153, 153, 1);
   font-size: 11px;
+  display: inline;
+}
+
+.organization h4{
+  height: 17px;
+  margin-top:25px;
+  margin-bottom:15px;
 }
 //Tabbed Nav and Filter
 .tabbedNav{
@@ -229,6 +258,14 @@ nav img{
   padding-bottom:30px;
 }
 
+.repos a{
+  text-decoration:none;
+}
+
+.repositoryNames a:hover{
+  text-decoration:underline;
+}
+
 .nameUpdate{
   float:left;
   color:RGBA(136, 136, 136, 1);
@@ -236,5 +273,12 @@ nav img{
 .stats{
   float: right;
   color: RGBA(136, 136, 136, 1);
+}
 
+.stats a {
+  text-decoration:none;
+}
+
+.stats a:hover{
+  color: RGBA(61, 132, 191, 1);
 }

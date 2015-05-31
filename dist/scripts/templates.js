@@ -32,11 +32,11 @@ this["JST"]["user"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"mai
 
   return "<section class = 'userContainer'>\n  <div class = \"avatar\">\n    <img src=\""
     + alias3(((helper = (helper = helpers.avatar_url || (depth0 != null ? depth0.avatar_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"avatar_url","hash":{},"data":data}) : helper)))
-    + "\" alt=\"\" />\n  <div>\n\n  <h1>"
+    + "\" alt=\"\" />\n  <div>\n  <div class = \"nameLogin\">\n    <h1>"
     + alias3(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
-    + "</h1>\n  <h2>"
+    + "</h1>\n    <h2>"
     + alias3(((helper = (helper = helpers.login || (depth0 != null ? depth0.login : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"login","hash":{},"data":data}) : helper)))
-    + "</h2>\n\n  <hr>\n\n  <div class = \"locationJoined\">\n    <p><span class=\"octicon octicon-location\"></span><span class = \"\">"
+    + "</h2>\n  </div>\n  <hr>\n\n  <div class = \"locationJoined\">\n    <p><span class=\"octicon octicon-location\"></span><span class = \"\">"
     + alias3(((helper = (helper = helpers.location || (depth0 != null ? depth0.location : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"location","hash":{},"data":data}) : helper)))
     + "</span></p>\n    <p><span class=\"octicon octicon-clock\"></span>\n    <span>Joined On"
     + alias3(((helper = (helper = helpers.created_at || (depth0 != null ? depth0.created_at : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"created_at","hash":{},"data":data}) : helper)))
@@ -44,13 +44,13 @@ this["JST"]["user"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"mai
     + alias3(((helper = (helper = helpers.followers_url || (depth0 != null ? depth0.followers_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"followers_url","hash":{},"data":data}) : helper)))
     + "\"><h3>"
     + alias3(((helper = (helper = helpers.followers || (depth0 != null ? depth0.followers : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"followers","hash":{},"data":data}) : helper)))
-    + "</h3></a>\n    <span>Followers</span>\n\n    <a href=\""
+    + "</h3></a>\n    <p>Followers</p>\n\n    <a href=\""
     + alias3(((helper = (helper = helpers.starred_url || (depth0 != null ? depth0.starred_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"starred_url","hash":{},"data":data}) : helper)))
     + "\">"
     + alias3(((helper = (helper = helpers.starred || (depth0 != null ? depth0.starred : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"starred","hash":{},"data":data}) : helper)))
-    + "</a>\n    <span>starred</span>\n\n    <a href=\""
+    + "</a>\n    <p>Starred</p>\n\n    <a href=\""
     + alias3(((helper = (helper = helpers.following_url || (depth0 != null ? depth0.following_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"following_url","hash":{},"data":data}) : helper)))
     + "\"><h3>"
     + alias3(((helper = (helper = helpers.following || (depth0 != null ? depth0.following : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"following","hash":{},"data":data}) : helper)))
-    + "</h3></a>\n    <span>Following</span>\n  </div>\n\n  <hr>\n\n  <div class = \"organization\">\n    <h4>Organizations</h4>\n\n    <a href=\"/TIY-GVL-FEE-2015-May\" aria-label=\"TIY-GVL-FEE-2015-May\"><img alt=\"@TIY-GVL-FEE-2015-May\" src=\"https://avatars0.githubusercontent.com/u/11824325?v=3&amp;s=84\"></a>\n\n\n    <a href=\"/TechClimber\" aria-label=\"TechClimber\"><img alt=\"@TechClimber\" data-user=\"12204206\" src=\"https://avatars0.githubusercontent.com/u/12204206?v=3&amp;s=84\"></a>\n  </div>\n\n</section>\n";
+    + "</h3></a>\n    <p>Following</p>\n  </div>\n\n  <hr>\n\n  <div class = \"organization\">\n    <h4>Organizations</h4>\n\n    <a href=\"/TIY-GVL-FEE-2015-May\" aria-label=\"TIY-GVL-FEE-2015-May\"><img alt=\"@TIY-GVL-FEE-2015-May\" src=\"https://avatars0.githubusercontent.com/u/11824325?v=3&amp;s=84\"></a>\n\n\n    <a href=\"/TechClimber\" aria-label=\"TechClimber\"><img alt=\"@TechClimber\" data-user=\"12204206\" src=\"https://avatars0.githubusercontent.com/u/12204206?v=3&amp;s=84\"></a>\n  </div>\n\n</section>\n";
 },"useData":true});
