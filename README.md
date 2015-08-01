@@ -1,7 +1,11 @@
-# Prepare your scaffolding
+# Github Profile Remake
 
-Clone this repo and run the setup script:
 
-    git clone git://github.com/jacobthemyth/cool-scaffolding.git [name of your project]
-    cd [name of your project]
-    ./setup.sh
+This project involved creating a remake of my personal Github page, utilizing AJAX to dynamically call data from the Github Developer API.
+
+## Technologies and Tools:
+* SASS
+* Bourbon Neat
+* moment.js
+* Github API
+* JSON data
