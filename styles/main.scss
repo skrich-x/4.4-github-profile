@@ -1,4 +1,6 @@
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+
+
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
 // Typography
@@ -18,4 +20,272 @@ body {
   font-family: $base-font-family;
   background-color: $base-background-color;
   color: $base-font-color;
+}
+
+//Global DOM styling
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+a { color: inherit; }
+
+hr{
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid RGBA(229, 229, 229, 1);
+}
+
+//Header styling
+
+header{
+  height: 50px;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid RGBA(229, 229, 229, 1);
+  background-color:RGBA(245, 245, 245, 1);
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.centeredNav{
+  @include outer-container (980px);
+}
+
+.centeredNav{
+  text-align: middle;
+}
+
+input{
+  height: 28px;
+  width: 360px;
+}
+
+input .type{
+  height: 22px;
+  width:250px;
+}
+
+.mega-octicon-mark-github span{
+  height: 28px;
+  width: 28px;
+  margin-right: 10px;
+}
+
+nav a{
+  text-decoration:none;
+  padding: 4px 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+nav a:hover{
+  color:RGBA(61, 132, 191, 1);
+}
+
+nav span:hover{
+  color:RGBA(61, 132, 191, 1);
+}
+
+.rightNav{
+  float: right;
+}
+
+nav img{
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+}
+.picNamePlus{
+  vertical-align:middle;
+}
+//centerContainer
+
+ .centerContainer{
+   @include outer-container (980px);
+   margin-top: 20px;
+ }
+
+//User sidebar Styling and Position
+
+.userInfo{
+  @include span-columns (3);
+  height:100%;
+  padding: 10px;
+}
+
+.avatar img{
+  height: 230px;
+  width: 230px;
+  border-radius: 6px;
+}
+
+.organization img{
+  height: 42px;
+  width: 42px;
+  border-radius: 3px;
+}
+
+.user h1{
+  font-size: 26px;
+  margin-top:5px;
+  margin-bottom:1px;
+}
+
+.user h2{
+  color: RGBA(102, 102, 115, 1);
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.locationJoined{
+  height: 75px;
+  font-size: 13px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.octicon-location,
+.octicon-clock{
+  color: RGBA(204, 204, 204, 1);
+}
+
+.follows{
+  height: 73px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.follows h3{
+  color: RGBA(61, 132, 191, 1);
+  font-size: 28px;
+  display: inline-block;
+}
+
+.follows p{
+  color: RGBA(153, 153, 153, 1);
+  font-size: 11px;
+  display: inline;
+}
+
+.organization h4{
+  height: 17px;
+  margin-top:25px;
+  margin-bottom:15px;
+}
+//Tabbed Nav and Filter
+.tabbedNav{
+  padding: 10px;
+}
+
+.tabs{
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.tabs a{
+  padding: 8px 12px;
+}
+
+.editProfile{
+  white-space: nowrap;
+  vertical-align: middle;
+  height: 26px;
+  width: 108px;
+  float: right;
+}
+
+.editProfile span{
+  font-size: 13px;
+}
+
+.search,
+.newRepoButton span{
+  font-size: 13px;
+}
+
+.filterBar{
+  border-top: 1px solid RGBA(229, 229, 229, 1);
+  padding-top: 10px;
+}
+
+ .filterBar input{
+  height: 34px;
+  width: 260px;
+}
+
+.filterBar a{
+  font-size: 13px;
+  color:RGBA(61, 132, 191, 1);
+  margin-left:10px;
+  font-weight: 400;
+  text-decoration:none;
+}
+
+.filterBar a:hover{
+  text-decoration:underline;
+}
+
+.filterBar button{
+  height: 34px;
+  width: 69px;
+  text-decoration:none;
+}
+
+ .newRepoButton{
+   background-color: RGBA(134, 217, 105, 1);
+   color:white;
+   border: 1px solid RGBA(83, 169, 80, 1);
+   margin-left: 15px;
+   float:right;
+}
+
+//Repos Styling and Position
+.repoContain{
+  @include span-columns (9 of 12);
+  padding-left: 10px;
+}
+
+.repositoryNames{
+  color: RGBA(61, 132, 191, 1);
+}
+
+.repos li{
+  height: 111px;
+  border-top: 1px solid RGBA(229, 229, 229, 1);
+  vertical-align: top;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.repos a{
+  text-decoration:none;
+}
+
+.repositoryNames a:hover{
+  text-decoration:underline;
+}
+
+.nameUpdate{
+  float:left;
+  color:RGBA(136, 136, 136, 1);
+}
+.stats{
+  float: right;
+  color: RGBA(136, 136, 136, 1);
+}
+
+.stats a {
+  text-decoration:none;
+}
+
+.stats a:hover{
+  color: RGBA(61, 132, 191, 1);
 }

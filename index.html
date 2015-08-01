@@ -5,7 +5,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title></title>
+    <title>Github-Profile</title>
+
+    <link rel="stylesheet" href="/octicons/octicons.css">
 
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
 
@@ -15,6 +17,64 @@
   </head>
   <body>
 
+
+      <header>
+        <nav class = "centeredNav">
+            <span class = "mega-octicon octicon-mark-github"></span>
+
+            <input type = "text" placeholder="Search Github">
+            <a href = "#">Explore</a>
+            <a href = "#">Gist</a>
+            <a href = "#">Blog</a>
+            <a href = "#">Help</a>
+            <div class = 'rightNav'>
+
+                <a href = "#"><img src = "https://avatars.githubusercontent.com/u/10929305?v=3" alt = "Avatar" />skrich-x</a>
+                <span class="octicon octicon-plus"></span>
+                <span class="octicon octicon-triangle-down"></span>
+              <span class = "octicon octicon-inbox"></span>
+              <span class = "octicon octicon-gear"></span>
+              <span class = "octicon octicon-sign-out"></span>
+            </div>
+        </nav>
+      </header>
+    <section class = "centerContainer">
+
+      <container class = "userInfo">
+        <div class = "user">
+        </div>
+      </container>
+
+
+
+      <container class = 'repoContain'>
+        <container class = "tabbedNav">
+          <div class = "tabs">
+              <a href="#"><span class = 'octicon octicon-diff-added'>Contributions</span></a>
+              <a href="#"><span class = 'octicon octicon-repo'>Repositories</span></a>
+              <a href="#"><span class = 'octicon octicon-rss'>Public Activity</span></a>
+              <button class = "editProfile"><span class="octicon octicon-pencil"> Edit Profile </span></button>
+          </div>
+
+          <div class = "filterBar">
+            <input type = "text" placeholder="Find a repository...">
+            <button class = "search"> Search </button>
+            <a href = "#">All</a>
+            <a href = "#">Public</a>
+            <a href = "#">Private</a>
+            <a href = "#">Sources</a>
+            <a href = "#">Forks</a>
+            <a href = "#">Mirrors</a>
+            <button class = "newRepoButton"><span class = "octicon octicon-repo"> New </span></button>
+          </div>
+        </container>
+        <ul class = "repos">
+
+        </ul>
+      </container>
+
+    </section>
+    <!-- <button>LogIn</button>-->
   <!-- Third Party Scripts -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/underscore/underscore.js"></script>
@@ -22,6 +82,7 @@
 
   <!-- Application Scripts -->
   <script src="dist/scripts/templates.js"></script>
+  <script src="scripts/token.js"></script>
   <script src="scripts/main.js"></script>
 
 </body>
